@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
 
   <!-- For all browsers -->
+  <link rel="stylesheet" href="css/base.css" media="screen">
   <link rel="stylesheet" href="css/style.css" media="screen">
 
   <!--[if (lt IE 9) & (!IEMobile)]>
@@ -36,42 +37,192 @@
 <body class="clearfix">
 
 <div class="page home">
+  <div class="content">
 
-  <header role="banner">
-    <hgroup>
-      <h1>Chad Crissman</h1>
-      <h2>Hi, I'm a web developer, musician, and aspiring bonsaiist</h2>
-    </hgroup>
-  </header>
+    <header role="banner">
+      <hgroup>
+        <h1>Chad Crissman</h1>
+        <h2>Hi, I'm a web developer, musician, <span class="amp">&amp;</span> aspiring bonsaiist</h2>
+      </hgroup>
+    </header>
 
+  </div>
 </div> <!-- end home -->
 
 
-<div id="home" class="page">
+<div id="work" class="page">
+  <section class="content">
+    <header class="section-heading">
+      <h1>Some things I've worked on</h1>
+    </header>
+
+    <ol class="photo-list">
+      <li>
+        <img src="img/h/dueprops-signin.png" alt="DueProps screenshot" />
+        <img src="img/h/dueprops-profile.png" alt="DueProps screenshot" />
+        <span class="client"><a href="http://www.dueprops.com">DueProps</a></span>
+        <p class="caption">
+          <strong>Services Provided: </strong>
+          HTML/CSS/Javascript Development
+        </p>
+      </li>
+      <li>
+        <img src="img/h/yp-litehp.png" alt="Yellowpages screenshot" />
+        <img src="img/h/yp-ypcrowd.png" alt="Yellowpages screenshot" />
+        <span class="client"><a href="http://www.yellowpages.com/litehp">Yellowpages homepage test</a></span>
+        <p class="caption">
+          <strong>Services Provided: </strong>
+          Creative direction, HTML/CSS/Javascript Development
+        </p>
+      </li>
+      <li>
+        <img src="img/h/buzz-feed.png" alt="Buzz screenshot" />
+        <img src="img/h/buzz-srp.png" alt="Buzz screenshot" />
+        <span class="client">Buzz.com</span>
+        <p class="caption">
+          <strong>Services Provided: </strong>
+          HTML/CSS/Javascript Development
+        </p>
+      </li>
+    </ol>
+  </section>
 
 </div>  <!-- end work -->
 
 
-<div id="skills" class="page">
+<section id="resume" class="page">
+  <div class="content">
 
-</div>  <!-- end skills -->
+    <header class="section-heading">
+      <h1>Experience <span class="amp">&amp;</span> Skills</h1>
+    </header>
+
+    <section class="experience">
+      <h2 class="sub-heading">Where I've worked</h2>
+      <ol>
+        <li>
+          <hgroup>
+            <h3>AT<span class="amp">&amp;</span>T Interactive</h3>
+            <h4>Front-End Ruby on Rails Developer</h4>
+          </hgroup>
+
+          <p class="dates">January 2009 &endash; Present</p>
+
+          <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean odio nibh, euismod a, lobortis in, laoreet eu, eros. Praesent lorem risus, commodo sit amet, viverra in, sagittis nec, justo.</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean odio nibh, euismod a, lobortis in, laoreet eu, eros. Praesent lorem risus, commodo sit amet, viverra in, sagittis nec, justo.</p>
+        </li>
+
+        <li>
+          <hgroup>
+            <h3><a href="http://www.dueprops.com" class="biz-link"/>DueProps</a></h3>
+            <h4>Front-End Ruby on Rails Developer</h4>
+          </hgroup>
+
+          <p class="dates">January 2011 &endash; Present</p>
+
+          <p class-"description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean odio nibh, euismod a, lobortis in, laoreet eu, eros. Praesent lorem risus, commodo sit amet, viverra in, sagittis nec, justo.</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean odio nibh, euismod a, lobortis in, laoreet eu, eros. Praesent lorem risus, commodo sit amet, viverra in, sagittis nec, justo.</p>
+        </li>
+      </ol>
+    </section> <!-- end experience -->
+
+    <section class="skills">
+      <h2 class="sub-heading">What I can do</h2>
+      <dl>
+        <dt>HTML <span class="amp">&amp;</span> CSS</dt>
+        <dd>Including the new HTML5 and CSS3 stuff. This is my specialty.</dd>
+
+        <dt>Javascript <span class="amp">&amp;</span> jQuery</dt>
+        <dd>An evolving skill and one that I'm using in most projects these days.</dd>
+
+        <dt>Ruby on Rails</dt>
+        <dd>I'm not a back-end developer but know enough to get around.</dd>
+
+        <dt>Git <span class="amp">&amp;</span> Subversion</dt>
+        <dd>I'm more competent in Git but have used Subversion.</dd>
+
+        <dt>Web Standards</dt>
+        <dd>Following web standards allows me to write clean and maintainable code that will work across multiple browsers.</dd>
+
+        <dt>Semantic Markup</dt>
+        <dd>Use the right markup for the content. This makes the content more accessible and the code easier to read.</dd>
+
+        <dt>Photoshop</dt>
+        <dd>My main tool for creating/slicing up comps and optimizing images.</dd>
+      </dl>
+    </section> <!-- end skills  -->
+
+  </div> <!-- end content -->
+</section>  <!-- end resume -->
 
 
-<div id="contact" class="page">
+<section id="contact" class="page">
+  <div class="content">
 
-</div>  <!-- end contact -->
+    <header class="section-heading">
+      <h1>Get in touch</h1>
+    </header>
+
+    <section id="contact-form">
+      <h2>Send me a message</h2>
+      <form name="contact" action="">
+        <fieldset>
+
+          <label for="name" class="visuallyhidden">First and Last Name</label>
+          <input type="text" name="name" id="name" placeholder="First and Last Name" />
+
+          <label for="email" class="visuallyhidden">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Email Address" />
+
+          <label for="message" class="visuallyhidden">Your message</label>
+          <textarea name="message" id="message" placeholder="Your message"></textarea>
+
+          <input type="submit" name="submit" class="button" id="submit" value="Send" />
+
+        </fieldset>
+      </form>
+    </section> <!-- end contact form -->
+
+    <section class="follow">
+      <h2>Other ways to find me</h2>
+      <ul>
+        <li><a href="http://www.twitter.com/crissmancd" class="twitter">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/in/ccrissman" class="linked-in">LinkedIn</a></li>
+        <li><a href="http://www.facebook.com/crissman" class="facebook">Facebook</a></li>
+        <li><a href="http://suda.co.uk/projects/X2V/get-vcard.php?uri=http://www.ccrissman.com/" class="vcard">vCard</a></li>
+      </ul>
+    </section> <!-- end contact links -->
+
+  </div>
+</section>  <!-- end contact -->
 
 
-<div id="footer" class="page">
+<footer role="contentinfo" id="footer" class="page">
+  <div class="content">
 
-  <footer role="contentinfo" class="clearfix">
+    <address class="vcard hidden">
+      <span class="fn n">
+        <span class="given-name">Chad</span>
+        <span class="family-name">Crissman</span>
+      </span>
+      <span class="title">Web developer</span>
+      <span class="url">ccrissman.com</span>
+      <span class="adr">
+        <span class="locality">Los Angeles</span>
+        <span class="region">CA</span>
+      </span>
+      <span class="tel">
+        <a href="tel://8054587182" class="value">(805) 458-7182</a>
+      </span>
+      <span class="email">cdcrissman@gmail.com</span>
+    </address>
 
-  </footer>
-
-</div>  <!-- end footer -->
+  </div>
+</footer>  <!-- end footer -->
 
 <nav role="navigation">
-  <ul>
+  <a href="#" id="show-nav" class="links-icon">Site Links</a>
+  <ul class="hidden">
     <li><a href="#home">Start</li>
     <li><a href="#work">Work</li>
     <li><a href="#skills">Skills</li>
