@@ -6,6 +6,9 @@
   width: 90%;
   margin: 0 auto;
 }
+header[role="banner"] {
+  text-align: center;
+}
 header[role="banner"] h1 {
   font-size: 32px;
   font-size: 3.2rem;

@@ -3,6 +3,9 @@ $(document).ready(function(){
   // iOS scale bug fix
   MBP.scaleFix();
 
+  // hide iOS URL bar
+  MBP.hideUrlBar();
+
   // Respond.js
   yepnope({
   	test : Modernizr.mq('(only all)'),
@@ -14,14 +17,5 @@ $(document).ready(function(){
 	if ($.fn.placeholder) {
 		$('input, textarea').placeholder();
 	}
-
-	// Run Matt Kersley's jQuery Responsive menu plugin (see plugins.js)
-  // if ($.fn.mobileMenu) {
-  //  $('ol#id').mobileMenu({
-  //    switchWidth: 768,                   // width (in px to switch at)
-  //    topOptionText: 'Choose a page',     // first option text
-  //    indentString: '&nbsp;&nbsp;&nbsp;'  // string for indenting nested items
-  //  });
-  // }
 
 });
