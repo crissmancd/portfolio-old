@@ -36,15 +36,24 @@
 
 <body class="clearfix">
 
-<div class="page home">
+<div id="home" class="page">
   <div class="content">
 
     <header role="banner">
-      <hgroup>
-        <h1>Chad Crissman</h1>
-        <h2>Hi, I'm a web developer, musician, <span class="amp">&amp;</span> aspiring bonsaiist</h2>
-      </hgroup>
+
+      <h1>Chad Crissman</h1>
+
+      <nav role="navigation">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
     </header>
+
+    <p class="h3 statement">Hi, I'm a web developer and designer specializing in HTML/CSS. I like to make things that are beautiful on the inside and outside. If you think I can help you, please <a href="#contact">get in touch</a></p>
 
   </div>
 </div> <!-- end home -->
@@ -85,6 +94,7 @@
         </p>
       </li>
     </ol>
+    <a href="#home" class="go-to-top">Top</a>
   </section>
 
 </div>  <!-- end work -->
@@ -153,6 +163,7 @@
     </section> <!-- end skills  -->
 
   </div> <!-- end content -->
+  <a href="#home" class="go-to-top">Top</a>
 </section>  <!-- end resume -->
 
 
@@ -169,13 +180,13 @@
         <fieldset>
 
           <label for="name" class="visuallyhidden">First and Last Name</label>
-          <input type="text" name="name" id="name" placeholder="First and Last Name" />
+          <input type="text" name="name" id="name" placeholder="First and Last Name" required />
 
           <label for="email" class="visuallyhidden">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="Email Address" />
+          <input type="email" name="email" id="email" placeholder="Email Address" autocorrect="off" autocapitalize="off" required />
 
           <label for="message" class="visuallyhidden">Your message</label>
-          <textarea name="message" id="message" placeholder="Your message"></textarea>
+          <textarea name="message" id="message" placeholder="Your message" required></textarea>
 
           <input type="submit" name="submit" class="button" id="submit" value="Send" />
 
@@ -194,6 +205,7 @@
     </section> <!-- end contact links -->
 
   </div>
+  <a href="#home" class="go-to-top">Top</a>
 </section>  <!-- end contact -->
 
 
@@ -219,16 +231,6 @@
 
   </div>
 </footer>  <!-- end footer -->
-
-<nav role="navigation">
-  <a href="#" id="show-nav" class="links-icon">Site Links</a>
-  <ul class="hidden">
-    <li><a href="#home">Start</li>
-    <li><a href="#work">Work</li>
-    <li><a href="#skills">Skills</li>
-    <li><a href="#contact">Contact</li>
-  </ul>
-</nav>
 
 
 <!-- Scripts -->

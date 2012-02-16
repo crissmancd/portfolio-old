@@ -12,12 +12,11 @@ HELPER CLASSES
 
 */
 
-
 /* RESET ===========================================*/
 html,body{margin:0;padding:0;}
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
-audio[controls],canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio[controls],canvas,video{display:inline-block;}
 .clearfix{zoom:1;}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
 .clearfix:after{clear:both;}
 
@@ -36,7 +35,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  width: 90%; /* 252px; */
+  width: 100%; /* 252px; */
   font-size: 16px;
   font-size: 1.6rem;
   font-family: "Cambria, Georgia, Times, " Times New Roman;
@@ -91,8 +90,6 @@ h6, .h6 {
 /* TEXT ----------------------------*/
 p, ol, ul, dl, address {
   margin-bottom: 1.5em;
-  font-size: 16px;
-  font-size: 1.6rem;
 }
 p {
   hyphens: auto;
@@ -188,12 +185,12 @@ sub {
 }
 ::-moz-selection {
   background: #7bacc8;
-  color: #c8977b;
+  color: #fafafa;
   text-shadow: none;
 }
 ::selection {
   background: #7bacc8;
-  color: #c8977b;
+  color: #fafafa;
   text-shadow: none;
 }
 
@@ -201,11 +198,10 @@ sub {
 ul, ol {
   margin: 0 0 1.5em -24px;
   padding: 0 0 0 24px;
+  list-style-type: none;
 }
 li ul, li ol {
   margin: 0;
-  font-size: 16px;
-  font-size: 1.6rem;
 }
 dl, dd {
   margin-bottom: 1.5em;
@@ -217,6 +213,7 @@ dt {
 /* LINKS -------------------*/
 a {
   color: #013568;
+  text-decoration: none;
 }
 a:visited {
   color: #011b35;
@@ -249,8 +246,6 @@ table {
   border-spacing: 0;
   margin-bottom: 1.5em;
   width: 100%;
-  font-size: 14px;
-  font-size: 1.4rem;
 }
 th, td, caption {
   padding: 0.1875em 10px 0.1875em 5px;
@@ -282,7 +277,6 @@ fieldset {
   border-width: 0;
 }
 legend {
-  *margin-left: -7px;
   padding: 0;
   border-width: 0;
 }
@@ -294,15 +288,11 @@ button,
 input,
 select,
 textarea {
-  font-size: 12px;
-  font-size: 1.2rem;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle;
 }
 button, input {
   line-height: normal;
-  *overflow: visible;
 }
 button,
 input[type="button"],
@@ -338,12 +328,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
 }
 ::-webkit-input-placeholder {
-  font-size: 14px;
-  font-size: 1.4rem;
 }
 input:-moz-placeholder {
-  font-size: 14px;
-  font-size: 1.4rem;
 }
 
 /* HELPER CLASSES ===========================================*/

@@ -1,5 +1,19 @@
 /* MAIN STYLES ===========================================*/
-
+.page {
+ padding: 1em 0;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+header[role="banner"] h1 {
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+nav[role="navigation"] li {
+  display: inline-block;
+  margin-right: 1em;
+}
 
 /* MEDIA QUERIES ===========================================*/
 @media only screen and (min-width: 480px) {
