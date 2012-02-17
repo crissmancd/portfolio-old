@@ -4,7 +4,7 @@ $(document).ready(function(){
   MBP.scaleFix();
 
   // hide iOS URL bar
-  MBP.hideUrlBar();
+  // MBP.hideUrlBar();
 
   // Respond.js
   yepnope({
@@ -14,8 +14,8 @@ $(document).ready(function(){
 
 
 	// Run Mathias Bynens jQuery placeholder plugin (see plugins.js)
-	if ($.fn.placeholder) {
-		$('input, textarea').placeholder();
-	}
+  // if ($.fn.placeholder) {
+  //  $('input, textarea').placeholder();
+  // }
 
 });
