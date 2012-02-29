@@ -39,9 +39,9 @@
 <div id="home" class="page">
   <div class="content">
 
-    <header role="banner">
+    <header role="banner" class="clearfix">
 
-      <h1 class="h2">Chad Crissman</h1>
+      <h1 class="logo">Chad Crissman</h1>
 
       <nav role="navigation">
         <ul class="nav-list">
@@ -53,7 +53,8 @@
 
     </header>
 
-    <p class="statement">Hi, I'm a web developer and designer specializing in HTML/CSS. I like to make things that are beautiful on the inside and outside. If you think I can help you, please <a href="#contact">get in touch</a></p>
+    <p class="statement">Hello, I'm a front-end web developer and drummer living in Los Angeles. I know all the buzzwords like "semantic code" and "HTML5/CSS3". Check out my work and if you think I can help you, please <a href="contact">get in touch</a>.</p>
+    <!-- <p class="statement">I'm a web developer and designer specializing in HTML and CSS. I like to make things that are as beautiful on the inside as they are on the outside. If you think I can help you, please <a href="#contact">get in touch</a></p> -->
 
   </div>
 </div> <!-- end home -->
@@ -174,7 +175,7 @@
     </header>
 
     <section id="contact-form">
-      <form name="contact" action="">
+      <form name="contact" action="processForm.php" method="post">
         <fieldset>
 
           <label for="name">First and Last Name</label>
@@ -190,6 +191,11 @@
 
         </fieldset>
       </form>
+
+      <div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+      <div id="successMessage" class="statusMessage"><p>Thanks for sending your message! We'll get back to you shortly.</p></div>
+      <div id="failureMessage" class="statusMessage"><p>There was a problem sending your message. Please try again.</p></div>
+      <div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
     </section> <!-- end contact form -->
 
     <section class="follow">

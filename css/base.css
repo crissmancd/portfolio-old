@@ -38,7 +38,8 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   font-family: "Cambria, Georgia, Times, " Times New Roman;
-  color: #282828;
+  color: #222;
+  color: rgba(0, 0, 0, .8);
   background-color: transparent;
 }
 img {
