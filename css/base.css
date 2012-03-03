@@ -37,7 +37,7 @@ body {
   width: 100%; /* 252px; */
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: "Cambria, Georgia, Times, " Times New Roman;
+  font-family: 'PTSansRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #222;
   color: rgba(0, 0, 0, .8);
   background-color: transparent;
@@ -50,8 +50,7 @@ img {
 /* HEADINGS -------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
+  font-family: 'PTSansCaptionRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h1, .h1 {
   margin-bottom: 0.75em;
@@ -400,3 +399,42 @@ input:-moz-placeholder {
 .lastUnit {float:none;width:auto;}
 /* extending grids to allow a unit that takes the width of its content */
 .media{width:auto;}
+
+
+/* FONTS ===========================================*/
+@font-face {
+    font-family: 'PTSansCaptionBold';
+    src: url('fonts/PTC75F-webfont.woff') format('woff'),
+         url('fonts/PTC75F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('fonts/PTS75F-webfont.woff') format('woff'),
+         url('fonts/PTS75F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansItalic';
+    src: url('fonts/PTS56F-webfont.woff') format('woff'),
+         url('fonts/PTS56F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('fonts/PTS55F-webfont.woff') format('woff'),
+         url('fonts/PTS55F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansNarrowBold';
+    src: url('fonts/PTN77F-webfont.woff') format('woff'),
+         url('fonts/PTN77F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
