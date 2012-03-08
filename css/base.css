@@ -215,6 +215,7 @@ dt, dt .amp {
 a {
   color: #013568;
   text-decoration: none;
+  display: inline-block;
 }
 a:visited {
   color: #011b35;
