@@ -14,13 +14,8 @@ $(document).ready(function(){
   	nope : ['js/libs/respond.min.js']
   });
 
-
-	// Run Mathias Bynens jQuery placeholder plugin (see plugins.js)
-  // if ($.fn.placeholder) {
-  //  $('input, textarea').placeholder();
-  // }
-
 });
+
 
 // How long to display status messages (in milliseconds)
 var messageDelay = 2000;

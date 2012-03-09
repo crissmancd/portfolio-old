@@ -36,27 +36,27 @@
 
 <body class="clearfix">
 
-<div id="home" class="page">
+<div id="home" class="page clearfix">
   <div class="content">
 
     <header role="banner" class="clearfix">
 
       <h1 class="logo"><span>My name is</span> Chad Crissman</h1>
 
-      <nav role="navigation">
-        <ul class="nav-list">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
     </header>
 
-    <p class="statement">I'm a front-end web developer and drummer living in Los Angeles. I know all the buzzwords like "semantic code" and "HTML5/CSS3". Check out my work and if you think I can help you, please <a href="contact">get in touch</a>.</p>
-    <!-- <p class="statement">I'm a web developer and designer specializing in HTML and CSS. I like to make things that are as beautiful on the inside as they are on the outside. If you think I can help you, please <a href="#contact">get in touch</a></p> -->
+    <p class="statement">I'm a front-end web developer and drummer living in Los Angeles. I know all the buzzwords like "semantic code" and "HTML5/CSS3". Check out my work and if you think I can help you, please <a href="contact">get in touch.</a></p>
 
   </div>
+
+  <nav role="navigation">
+    <ul class="nav-list">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#resume">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
 </div> <!-- end home -->
 
 
@@ -101,7 +101,7 @@
 
 
 <section id="resume" class="page">
-  <div class="content">
+  <div class="content clearfix">
 
     <header class="section-heading">
       <h1>Experience</h1>
@@ -168,13 +168,13 @@
 
 
 <section id="contact" class="page">
-  <div class="content">
+  <div class="content clearfix">
 
     <header class="section-heading">
       <h1>Get in touch</h1>
     </header>
 
-    <section id="contact-form">
+    <section class="contact-form">
       <form name="contact" action="processForm.php" method="post">
         <fieldset>
 
