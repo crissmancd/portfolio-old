@@ -180,17 +180,17 @@ sub {
   bottom: -0.25em;
 }
 ::-webkit-selection {
-  background: #e6e6e6;
+  background: #55ABBB;
   color: #fafafa;
   text-shadow: none;
 }
 ::-moz-selection {
-  background: #7bacc8;
+  background: #55ABBB;
   color: #fafafa;
   text-shadow: none;
 }
 ::selection {
-  background: #7bacc8;
+  background: #55ABBB;
   color: #fafafa;
   text-shadow: none;
 }
@@ -213,15 +213,18 @@ dt, dt .amp {
 
 /* LINKS -------------------*/
 a {
-  color: #013568;
+  padding: .2em .1em .1em;
+  color: #55ABBB;
   text-decoration: none;
   display: inline-block;
-}
-a:visited {
-  color: #011b35;
+  vertical-align: baseline;
+  -moz-transition: background .1s linear;
+  -webkit-transition: background .1s linear;
+  transition: background .1s linear;
 }
 a:hover {
-  color: #011b35;
+  background: #1C6B7A;
+  color: #9BD3DD;
 }
 a:focus {
   outline: thin dotted;

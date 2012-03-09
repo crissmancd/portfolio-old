@@ -37,7 +37,11 @@ nav {
 #home a {
   color: #fff;
   color: rgba(255, 255, 255, .8);
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, .2);
+}
+#home a:hover {
+  background: #FFD371;
+  color: #000;
 }
 header[role="banner"] {
   text-align: left;
@@ -83,7 +87,10 @@ nav[role=navigation] {
   width: 100%;
 }
 .photo-list li {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  &:last-child {
+    margin-bottom: 2em;
+  }
 }
 .photo-list .client {
   display: block;
@@ -110,7 +117,7 @@ nav[role=navigation] {
 .photo-list .img {
   display: block;
   clear: both;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
 }
 .photo-list img {
   display: block;
@@ -147,23 +154,91 @@ nav[role=navigation] {
 form {
   margin-bottom: 3em;
 }
+label {
+  font-weight: bold;
+  line-height: 1.5;
+  display: inline-block;
+}
+input, textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  padding: .5em;
+  font-size: 16px;
+  font-size: 1.6rem;
+  background: #FFE7B1;
+  -moz-transition: background .2s ease-out;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+input:focus, textarea:focus {
+  background: #fff;
+}
+textarea {
+  height: 6em;
+}
+input[type=submit] {
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  border: none;
+  background: #5ab;
+  color: #000;
+  color: rgba(0, 0, 0, .6);
+  -moz-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+input[type=submit]:hover {
+  background: rgba(255, 255, 255, .8);
+  color: #000;
+}
 .statusMessage {
   display: none;
+  text-align: center;
+}
+.statusMessage p {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+.follow li {
+  opacity: .8;
+  -moz-transition: opacity .1s linear;
+  -webkit-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+.follow li:hover {
+  opacity: 1;
+}
+.follow a {
+  width: 80%;
+}
+.follow a:hover {
+  background: transparent;
 }
 
 
 /*- footer -*/
-footer {
+#footer {
+  padding-top: 1em;
   background: #000;
   color: #fafafa;
   text-align: center;
 }
 .footer-nav a {
+  padding: .1em .2em .2em;
   color: #fafafa;
+  font-weight: bold;
+}
+.footer-nav a:hover {
+  background: none;
 }
 .colophon {
   text-align: left;
   line-height: 1.5;
+  margin-bottom: 0;
 }
 .colophon a {
   color: #fff;
