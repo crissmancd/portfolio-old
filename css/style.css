@@ -181,7 +181,8 @@ input, textarea {
   transition: background .2s ease-out;
 }
 input:focus, textarea:focus {
-  background: #fff;
+  background: #fafafa;
+  background: rgba(255, 255, 255, .9);
 }
 textarea {
   height: 6em;
@@ -192,8 +193,8 @@ input[type=submit] {
   font-weight: bold;
   border: none;
   background: #5ab;
-  color: #000;
-  color: rgba(0, 0, 0, .6);
+  color: #fff;
+  color: rgba(255, 255, 255, .9);
   -moz-transition: all .2s ease-out;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -236,7 +237,7 @@ input[type=submit]:hover {
 }
 .footer-nav .nav-list {
   display: inline-block;
-  padding: .2em;
+  padding: 0;
   margin-bottom: 1em;
   font-size: 16px;
   font-size: 1.6rem;
@@ -245,10 +246,9 @@ input[type=submit]:hover {
   display: inline-block;
 }
 .footer-nav .nav-list a {
-  padding: .2em .5em;
+  padding: .2em;
 }
 .footer-nav a {
-  padding: 0;
   color: #fafafa;
   font-weight: bold;
 }
@@ -340,6 +340,7 @@ input[type=submit]:hover {
   }
   .contact-form {
     width: 60%;
+    min-height: 24em;
   }
   .follow {
     width: 30%;
@@ -354,6 +355,17 @@ input[type=submit]:hover {
   .content {
     width: 70%;
   }
+  #home {
+    padding-top: 4em;
+  }
+  #work .content {
+    width: 80%;
+  }
+  div:not(#home) a {
+    -moz-transition: background .2s linear;
+    -webkit-transition: background .2s linear;
+    transition: background .2s linear;
+  }
   .logo {
     font-size: 36px;
     font-size: 3.6rem;
@@ -367,13 +379,21 @@ input[type=submit]:hover {
     font-size: 21px;
     font-size: 2.1rem;
   }
-  #work .content {
-    width: 80%;
+  .photo-list .client {
+    font-size: 21px;
+    font-size: 2.1rem;
   }
-  a {
-    -moz-transition: background .1s linear;
-    -webkit-transition: background .1s linear;
-    transition: background .1s linear;
+  .caption {
+    padding-top: .4em;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .footer-nav .nav-list a {
+    padding: .2em .5em;
+  }
+  .colophon {
+    font-size: 21px;
+    font-size: 2.1rem;
   }
 }
 

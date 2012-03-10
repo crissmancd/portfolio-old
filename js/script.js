@@ -6,7 +6,7 @@ $(document).ready(function(){
   MBP.scaleFix();
 
   // hide iOS URL bar
-  // MBP.hideUrlBar();
+  MBP.hideUrlBar();
 
   // Respond.js
   yepnope({
@@ -28,14 +28,17 @@ function submitForm() {
   if ( !$('#name').val() || !$('#email').val() || !$('#message').val() ) {
 
     // No; display a warning message and return to the form
-    $('#incompleteMessage').fadeIn().delay(messageDelay).fadeOut();
-    contactForm.fadeOut().delay(messageDelay).fadeIn();
+    // contactForm.hide().delay(messageDelay).fadeIn();
+    //     $('#incompleteMessage').fadeIn().delay(messageDelay).fadeOut('fast');
+
+    contactForm.hide().delay(messageDelay).fadeIn();
+    $('#incompleteMessage').fadeIn().delay(messageDelay).fadeOut('fast');
 
   } else {
 
     // Yes; submit the form to the PHP script via Ajax
+    contactForm.hide();
     $('#sendingMessage').fadeIn();
-    contactForm.fadeOut();
 
     $.ajax( {
       url: contactForm.attr( 'action' ) + "?ajax=true",
