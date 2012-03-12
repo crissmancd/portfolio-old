@@ -223,6 +223,9 @@ a:hover {
   background: #1C6B7A;
   color: #9BD3DD;
 }
+a.img:hover {
+  background: transparent;
+}
 a:focus {
   outline: thin dotted;
   color: #011b35;
