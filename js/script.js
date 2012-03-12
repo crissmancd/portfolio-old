@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $.localScroll();
+
   $('form').submit(submitForm);
 
   // iOS scale bug fix

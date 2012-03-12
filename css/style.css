@@ -187,6 +187,7 @@ input:focus, textarea:focus {
 }
 textarea {
   height: 6em;
+  resize: vertical;
 }
 input[type=submit] {
   font-size: 21px;
