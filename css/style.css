@@ -5,6 +5,7 @@
  padding: 2em 0 2em;
 }
 .content {
+  position: relative;
   width: 90%;
   max-width: 1075px;
   margin: 0 auto;
@@ -32,10 +33,71 @@ nav {
 }
 
 /*- top page -*/
+nav[role=navigation] {
+  position: relative;
+  height: 150px;
+  padding: 0 5%;
+  top: -1em;
+  margin-top: -150px;
+  background: #000;
+  -webkit-transition: all .3s ease-out;
+}
+nav[role=navigation].show {
+  margin-top: 0;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+nav[role=navigation] .nav-list a {
+  padding: .7em .5em;
+  color: #fff;
+}
+nav[role=navigation]  .nav-list a:hover {
+  background: #FFD371;
+  color: #000;
+}
+.avatar {
+  display: block;
+  float: left;
+  width: 125px;
+  margin-right: 1em;
+  position: relative;
+  top: 0;
+  border: 2px solid #fff;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+.avatar img {
+  display: block;
+  border-radius: 0 0 4px 4px;
+}
+nav[role=navigation] .show-nav {
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  text-indent: -999em;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+  right: 5%;
+  bottom: -40px;
+  background-size: contain;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+#home nav[role=navigation] .show-nav,
+#home nav[role=navigation] .show-nav:hover {
+  background: #000 url(../img/m/arrow-down.png) center top no-repeat;
+}
 #home {
   background: #55aabb;
+  color: #fff;
   padding-top: 1em;
-  padding-bottom: 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .7);
 }
 #home a {
   color: #fff;
@@ -50,43 +112,22 @@ header[role="banner"] {
 }
 .logo {
   font-family: 'PTSansCaptionBold', georgia;
-  text-align: center;
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 1.5;
 }
 .logo span {
   display: block;
-  font-family: 'PTSansRegular';
-  font-size: 24px;
-  font-size: 2.4rem;
 }
-nav[role=navigation] {
-  box-sizing: border-box;
-  background: #000;
-  width: 100%;
-}
-.nav-list {
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 18px;
-  font-size: 1.8rem;
-  overflow: hidden;
-}
-nav[role=navigation] .nav-list li {
-  float: left;
-  width: 33%;
-}
-nav[role=navigation] .nav-list a {
-  padding: .5em .5em .7em;
-}
-
 .statement {
   font-family: 'PTSansBold', helvetica, serif;
   font-size: 24px;
   font-size: 2.4rem;
   line-height: 1.5;
   text-align: justify;
+}
+.statement a {
+  border-bottom: 1px solid #fff;
 }
 
 /*- work page -*/
@@ -273,9 +314,6 @@ input[type=submit]:hover {
   .logo {
     line-height: 1.5;
   }
-  .logo span {
-    display: inline-block;
-  }
   .follow a {
     width: 60%;
   }
@@ -288,9 +326,10 @@ input[type=submit]:hover {
   #home {
     padding-top: 2em;
   }
-  .logo span {
-    display: block;
+  .avatar {
+    top: -2em;
   }
+
   nav[role=navigation] {
     width: auto;
     float: right;
@@ -360,6 +399,9 @@ input[type=submit]:hover {
   #home {
     padding-top: 4em;
   }
+  .avatar {
+    top: -4em;
+  }
   #work .content {
     width: 80%;
   }
@@ -372,7 +414,6 @@ input[type=submit]:hover {
     font-size: 36px;
     font-size: 3.6rem;
   }
-  .logo span,
   .statement {
     font-size: 28px;
     font-size: 2.8rem;

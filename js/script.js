@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  $('.show-nav').click(function() {
+    $(this).parent().toggleClass('show');
+  })
+
   $.localScroll();
 
   $('form').submit(submitForm);
