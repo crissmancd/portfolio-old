@@ -77,22 +77,37 @@ nav[role=navigation]  .nav-list a:hover {
 nav[role=navigation] .show-nav {
   display: block;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   text-indent: -999em;
   overflow: hidden;
   position: absolute;
   z-index: 100;
   right: 5%;
-  bottom: -40px;
-  background-size: contain;
+  bottom: -30px;
+  background: #000;
   border-radius: 0 0 6px 6px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+  text-align: center;
 }
-#home nav[role=navigation] .show-nav,
 #home nav[role=navigation] .show-nav:hover {
-  background: #000 url(../img/m/arrow-down.png) center top no-repeat;
+  background: #000;
 }
+.show-nav .nav-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 15px auto 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+nav.show .show-nav .nav-arrow {
+  border-top-color: transparent;
+  border-bottom: 5px solid #fff;
+  margin-top: 10px;
+}
+
 #home {
   background: #55aabb;
   color: #fff;
