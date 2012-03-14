@@ -100,6 +100,7 @@ p {
   -webkit-hyphenate-character: "\2010";
   -webkit-hyphenate-limit-after: 1;
   -webkit-hyphenate-limit-before: 3;
+  line-height: 1.5;
 }
 
 blockquote {
@@ -375,9 +376,9 @@ input:-moz-placeholder {
   clip: auto;
 }
 .amp {
-  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 300;
   font-style: italic;
-  font-weight: normal;
 }
 
 /* GRIDS ===========================================*/

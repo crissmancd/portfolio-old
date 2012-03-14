@@ -68,7 +68,7 @@ nav[role=navigation]  .nav-list a:hover {
   display: block;
   float: left;
   width: 125px;
-  margin-right: 1em;
+  margin-right: 5%;
   position: relative;
   top: 0;
   border: 2px solid #fff;
@@ -143,7 +143,6 @@ header[role="banner"] {
   font-weight: 500;
   font-size: 21px;
   font-size: 2.1rem;
-  line-height: 1.5;
   text-align: justify;
 }
 .statement a {
@@ -155,7 +154,7 @@ header[role="banner"] {
   width: 100%;
 }
 .photo-list li {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   &:last-child {
     margin-bottom: 2em;
   }
@@ -164,7 +163,7 @@ header[role="banner"] {
   display: block;
   float: left;
   padding-left: 5%;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   margin-right: 0;
   text-align: center;
   font-weight: 700;
@@ -174,6 +173,7 @@ header[role="banner"] {
   padding-right: 5%;
   font-size: 14px;
   font-size: 1.4rem;
+  line-height: 1.5;
   margin-bottom: 0;
 }
 .caption strong {
@@ -182,7 +182,7 @@ header[role="banner"] {
 .photo-list .img {
   display: block;
   clear: both;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .photo-list img {
   display: block;
@@ -206,12 +206,9 @@ header[role="banner"] {
   font-weight: 300;
   font-style: italic;
 }
-.experience .description {
-  line-height: 1.3;
-}
 .skills dt,
 .skills dd {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 /*- contact page -*/
@@ -317,7 +314,6 @@ input[type=submit]:hover {
 }
 .colophon {
   text-align: left;
-  line-height: 1.5;
   margin-bottom: 0;
 }
 .colophon a {
@@ -328,9 +324,6 @@ input[type=submit]:hover {
 /* MEDIA QUERIES ===========================================*/
 /*- iPhone landscape -*/
 @media only screen and (min-width: 480px) {
-  .logo {
-    line-height: 1.5;
-  }
   .follow a {
     width: 60%;
   }
@@ -365,6 +358,9 @@ input[type=submit]:hover {
   nav[role=navigation] .nav-list li {
     display: inline-block;
   }
+  .logo span {
+    display: inline;
+  }
   .statement {
     font-size: 24px;
     font-size: 2.4rem;
@@ -379,9 +375,6 @@ input[type=submit]:hover {
     margin-bottom: 1em;
     font-size: 36px;
     font-size: 3.6rem;
-  }
-  .logo span {
-    display: inline;
   }
   div:not(#home) a {
     -moz-transition: background .2s linear;
@@ -440,7 +433,6 @@ input[type=submit]:hover {
     font-size: 2.1rem;
   }
   .caption {
-    padding-top: .4em;
     font-size: 18px;
     font-size: 1.8rem;
   }
