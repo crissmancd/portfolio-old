@@ -29,7 +29,8 @@
 
 /*- general styles -*/
 nav {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'museo-slab', serif;
+  font-weight: 500;
 }
 
 /*- top page -*/
@@ -126,7 +127,7 @@ header[role="banner"] {
   text-align: left;
 }
 .logo {
-  font-family: 'PTSansCaptionBold', georgia;
+  font-weight: 700;
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 1.5;
@@ -135,7 +136,8 @@ header[role="banner"] {
   display: block;
 }
 .statement {
-  font-family: 'PTSansBold', helvetica, serif;
+  font-family: 'museo-slab', serif;
+  font-weight: 500;
   font-size: 24px;
   font-size: 2.4rem;
   line-height: 1.5;
@@ -162,10 +164,7 @@ header[role="banner"] {
   margin-bottom: .5em;
   margin-right: 0;
   text-align: center;
-  font-weight: bold;
-}
-.photo-list .client a {
-  font-weight: bold;
+  font-weight: 700;
 }
 .caption {
   float: right;
@@ -201,7 +200,8 @@ header[role="banner"] {
   color: #000;
 }
 .experience .dates {
-  font-family: 'PTSansItalic', 'helvetical neue', helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 .experience .description {
   line-height: 1.3;
@@ -219,7 +219,6 @@ form {
   margin-bottom: 3em;
 }
 label {
-  font-weight: bold;
   line-height: 1.5;
   display: inline-block;
 }
@@ -248,7 +247,7 @@ textarea {
 input[type=submit] {
   font-size: 21px;
   font-size: 2.1rem;
-  font-weight: bold;
+  font-weight: 700;
   border: none;
   background: #5ab;
   color: #fff;
@@ -308,7 +307,7 @@ input[type=submit]:hover {
 }
 .footer-nav a {
   color: #fafafa;
-  font-weight: bold;
+  font-weight: 700;
 }
 .footer-nav a:hover {
   background: none;
@@ -320,7 +319,7 @@ input[type=submit]:hover {
 }
 .colophon a {
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* MEDIA QUERIES ===========================================*/

@@ -37,7 +37,8 @@ body {
   width: 100%;
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: 'PTSansRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 500;
   color: #222;
   color: rgba(0, 0, 0, .8);
   background-color: transparent;
@@ -50,7 +51,8 @@ img {
 /* HEADINGS -------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'PTSansCaptionRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'museo-slab', sans-serif;
+  font-weight: 500;
 }
 h1, .h1 {
   margin-bottom: 0.75em;
@@ -80,12 +82,10 @@ h5, .h5 {
   margin-bottom: 1.5em;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: bold;
 }
 h6, .h6 {
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: bold;
 }
 
 /* TEXT ----------------------------*/
@@ -120,7 +120,7 @@ abbr[title] {
   cursor: help;
 }
 b, strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 hr {
   display: block;
@@ -139,7 +139,7 @@ mark {
   background-color: #c3d9e6;
   color: #000000;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
 }
 pre,
 code,
@@ -207,8 +207,8 @@ li ul, li ol {
 dl, dd {
   margin-bottom: 1.5em;
 }
-dt, dt .amp {
-  font-weight: bold;
+dt {
+  font-weight: 700;
 }
 
 /* LINKS -------------------*/
@@ -244,7 +244,7 @@ figure img, figure object, figure embed {
 }
 figcaption {
   display: block;
-  font-weight: normal;
+  font-weight: 500;
 }
 table {
   border-collapse: collapse;
@@ -280,7 +280,7 @@ legend {
 }
 label {
   display: block;
-  font-weight: normal;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -288,7 +288,8 @@ button,
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   font-size: 1.6rem;
   color: #404040;
@@ -404,41 +405,3 @@ input:-moz-placeholder {
 /* extending grids to allow a unit that takes the width of its content */
 .media{width:auto;}
 
-
-/* FONTS ===========================================*/
-@font-face {
-    font-family: 'PTSansCaptionBold';
-    src: url('fonts/PTC75F-webfont.woff') format('woff'),
-         url('fonts/PTC75F-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'PTSansBold';
-    src: url('fonts/PTS75F-webfont.woff') format('woff'),
-         url('fonts/PTS75F-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PTSansItalic';
-    src: url('fonts/PTS56F-webfont.woff') format('woff'),
-         url('fonts/PTS56F-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'PTSansRegular';
-    src: url('fonts/PTS55F-webfont.woff') format('woff'),
-         url('fonts/PTS55F-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'PTSansNarrowBold';
-    src: url('fonts/PTN77F-webfont.woff') format('woff'),
-         url('fonts/PTN77F-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
