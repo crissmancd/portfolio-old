@@ -95,6 +95,7 @@ p, ol, ul, dl, address {
 p {
 
   -moz-hyphens: auto;
+  -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
   -webkit-hyphenate-character: "\2010";
@@ -219,6 +220,11 @@ a {
   text-decoration: none;
   display: inline-block;
   vertical-align: baseline;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
 }
 a:hover {
   background: #1C6B7A;
