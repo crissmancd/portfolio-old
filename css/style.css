@@ -33,7 +33,7 @@ nav {
   font-weight: 500;
 }
 
-/*- top page -*/
+/*- navigation -*/
 nav[role=navigation] {
   position: relative;
   height: 150px;
@@ -66,6 +66,9 @@ nav[role=navigation]  .nav-list a:hover {
 }
 .avatar {
   display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   width: 125px;
   margin-right: 5%;
@@ -94,7 +97,7 @@ nav[role=navigation]  .nav-list a:hover {
   border-radius: 0 0 6px 6px;
   text-align: center;
 }
-#home .show-nav:hover {
+.show-nav:hover {
   background: #000;
 }
 .show-nav .nav-arrow {
@@ -112,11 +115,14 @@ nav.show .show-nav .nav-arrow {
   margin-top: 10px;
 }
 
+/*- landing page -*/
 #home {
-  background: #55aabb;
+  background: #55aabb url(../img/l/argyle-blue.png) 0 0 repeat;
   color: #fff;
   padding-top: 1em;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .7);
+  position: relative;
+  z-index: 1;
 }
 #home a {
   color: #fff;
@@ -129,7 +135,7 @@ header[role="banner"] {
   text-align: left;
 }
 .logo {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 1.5;
@@ -212,7 +218,7 @@ header[role="banner"] {
 
 /*- contact page -*/
 #contact {
-  background: #FFD371;
+  background: #FFD371 url(../img/l/argyle-gold.png) 0 0 repeat;
 }
 form {
   margin-bottom: 3em;
@@ -256,6 +262,7 @@ input[type=submit] {
   transition: all .2s ease-out;
 }
 input[type=submit]:hover {
+  background: #fff;
   background: rgba(255, 255, 255, .8);
   color: #000;
 }
@@ -267,6 +274,14 @@ input[type=submit]:hover {
   font-size: 24px;
   font-size: 2.4rem;
 }
+.contact-info a {
+  display: block;
+  text-align: center;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.5;
+  color: #000;
+}
 .follow li {
   opacity: .8;
   -moz-transition: opacity .1s linear;
@@ -276,7 +291,7 @@ input[type=submit]:hover {
 .follow li:hover {
   opacity: 1;
 }
-.follow a {
+.follow li a {
   width: 80%;
 }
 .follow a:hover {
@@ -303,10 +318,10 @@ input[type=submit]:hover {
 }
 .footer-nav .nav-list a {
   padding: .2em;
+  font-weight: 900;
 }
 .footer-nav a {
   color: #fafafa;
-  font-weight: 700;
 }
 .footer-nav a:hover {
   background: none;
@@ -320,59 +335,11 @@ input[type=submit]:hover {
   font-weight: 700;
 }
 
-/*- sample pages -*/
-#sample-home {
-  padding: 0;
-}
-#sample-page nav[role=navigation] {
-  height: auto;
-  margin-top: 0;
-  top: 0;
-  text-align: center;
-}
-#sample-page nav[role=navigation] li {
-  display: inline-block;
-}
-#sample-page .logo {
-  margin-bottom: 0;
-  margin-top: .5em;
-  text-align: center;
-}
-#sample-page .logo a {
-  color: #55aabb;
-  font-weight: 900;
-}
-#sample-page .logo a:hover {
-  background: transparent;
-  color: #55aabb;
-}
-#sample img {
-  display: block;
-  margin: 0 auto 1em;
-  max-width: none;
-}
-.pagination {
-  margin: 0;
-  font-size: 21px;
-  font-size: 2.1rem;
-  text-align: center;
-}
-.pagination a {
-  margin: 0 1em;
-}
-#sample-footer {
-  padding-top: 0;
-  text-align: center;
-}
-#sample-footer a {
-  color: #000;
-}
-
 
 /* MEDIA QUERIES ===========================================*/
 /*- iPhone landscape -*/
 @media only screen and (min-width: 480px) {
-  .follow a {
+  .follow li a {
     width: 60%;
   }
 }
@@ -383,16 +350,12 @@ input[type=submit]:hover {
   }
   nav[role=navigation] {
     height: auto;
-    float: none;
-    margin: 0 0 3em;
-    top: 0;
-    background: transparent;
-  }
-  #sample-page nav[role=navigation] {
     float: right;
-    z-index: 200;
+    width: 20%;
     margin: 0;
-    padding: 0;
+    top: 0;
+    z-index: 100;
+    background: transparent;
   }
   nav[role=navigation].show {
     box-shadow: none;
@@ -401,31 +364,33 @@ input[type=submit]:hover {
     display: none;
   }
   .avatar {
+    float: none;
     top: 0;
-    width: 20%;
-    z-index: 100;
+    width: 100%;
+    margin-bottom: 1em;
   }
   nav[role=navigation] .nav-list {
-    float: right;
     background: #000;
+    text-align: center;
+    border-radius: 6px;
   }
-  #sample-page nav[role=navigation] .nav-list {
-    background: transparent;
+  nav[role=navigation] .nav-list li,
+  nav[role=navigation] .nav-list a {
+    display: block;
   }
-  nav[role=navigation] .nav-list li {
-    display: inline-block;
+  nav[role=navigation] .nav-list li:first-child a:hover {
+    border-radius: 6px 6px 0 0;
   }
-  #sample-page .nav-list a {
-    color: #000;
+  nav[role=navigation] .nav-list li:last-child a:hover {
+    border-radius: 0 0 6px 6px;
   }
   .logo span {
     display: inline;
   }
-  #sample-page header[role=banner] {
-    width: 100%;
-  }
-  #sample-page .logo {
-    text-align: left;
+  header[role=banner] {
+    float: left;
+    padding-top: 5em;
+    width: 70%;
   }
   .statement {
     font-size: 24px;
@@ -437,21 +402,6 @@ input[type=submit]:hover {
 }
 
 @media only screen and (min-width: 769px) {
-  .logo {
-    margin-bottom: 1em;
-    font-size: 36px;
-    font-size: 3.6rem;
-  }
-  div:not(#home) a {
-    -moz-transition: background .2s linear;
-    -webkit-transition: background .2s linear;
-    transition: background .2s linear;
-  }
-  .statement {
-    margin-bottom: 3em;
-    font-size: 28px;
-    font-size: 2.8rem;
-  }
   #work .content {
     width: 90%;
   }
@@ -502,21 +452,63 @@ input[type=submit]:hover {
     font-size: 18px;
     font-size: 1.8rem;
   }
-  .footer-nav .nav-list a {
-    padding: .2em .5em;
+  label, input {
+    font-size: 18px;
+    font-size: 1.8rem;
   }
+  .follow {
+    margin-top: 1em;
+  }
+  .contact-info a {
+    text-align: left;
+  }
+  #footer {
+    text-align: left;
+  }
+  .footer-nav .nav-list a {
+    padding: .2em 1em .2em 0;
+  }
+  .footer-nav .nav-list a,
   .colophon {
     font-size: 21px;
     font-size: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 1075px) {
-  nav[role=navigation] {
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 1075px;
+@media only screen and (min-width: 1200px) {
+  .content {
+    width: 80%;
   }
+  nav[role=navigation] {
+    padding-right: 10%;
+    width: 15%;
+  }
+  .logo {
+    font-size: 36px;
+    font-size: 3.8rem;
+  }
+  .statement {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+  label, input {
+    font-size: 21px;
+    font-size: 2.1rem;
+  }
+  input[type=submit] {
+    float: right;
+    width: 50%;
+  }
+  .follow {
+    margin-top: 2em;
+  }
+  .follow li {
+    width: 25%;
+  }
+  .follow li a {
+    width: 80%;
+  }
+
 }
 
 @media only screen and (min-width: 1382px) {

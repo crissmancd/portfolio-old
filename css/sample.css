@@ -1,0 +1,70 @@
+body {
+  padding: 0 0 2em;
+}
+img {
+  max-width: none;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+nav[role=navigation] {
+  margin-top: .4em;
+  margin-bottom: 0;
+  font-family: 'museo-slab', serif;
+  font-weight: 500;
+}
+.nav-list {
+  margin-bottom: .5em;
+  text-align: center;
+}
+nav[role=navigation] li {
+  display: inline;
+}
+nav[role=navigation] a {
+  padding: .7em .5em;
+  color: #000;
+  font-size: 21px;
+  font-size: 2.1rem;
+}
+nav[role=navigation] a:hover {
+  background: #FFD371;
+  color: #000;
+}
+.logo {
+  line-height: 1.5;
+  text-align: center;
+}
+.logo a {
+  font-weight: 900;
+}
+.logo a:hover {
+  background: transparent;
+  color: #55aabb;
+}
+#sample img {
+  display: block;
+  margin: 0 auto 1em;
+}
+.pagination {
+  font-size: 21px;
+  font-size: 2.1rem;
+  text-align: center;
+}
+.pagination a {
+  padding: .5em 1em;
+}
+
+@media only screen and (min-width: 600px) {
+
+ body {
+   padding-top: 1em;
+ }
+ nav[role=navigation] {
+  float: right;
+ }
+ .logo {
+   text-align: left;
+ }
+
+}
