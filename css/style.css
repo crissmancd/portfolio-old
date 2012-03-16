@@ -2,7 +2,7 @@
 
 /*- layout -*/
 .page {
- padding: 2em 0 2em;
+ padding: 1.5em 0;
  position: relative;
 }
 .content {
@@ -17,11 +17,16 @@
   text-align: center;
 }
 .section-heading h1 {
-  margin-bottom: 1em;
+  margin-top: 1.33333em;
+  margin-bottom: 1.33333em;
 }
+
 .sub-heading {
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 24px;
   font-size: 2.4rem;
+  line-height: 1;
 }
 .home-link {
   text-align: center;
@@ -37,12 +42,12 @@ nav {
 /*- navigation -*/
 nav[role=navigation] {
   position: relative;
-  height: 150px;
+  height: 144px;
   width: 102%;
   padding: 0 5%;
-  top: -1em;
+  top: -1.5em;
   left: -6%;
-  margin-top: -150px;
+  margin-top: -144px;
   background: #000;
   -webkit-transition: margin .3s ease-out;
 }
@@ -54,9 +59,10 @@ nav[role=navigation].show {
   padding: 0;
   font-size: 18px;
   font-size: 1.8rem;
+  line-height: 1.33333;
 }
 nav[role=navigation] .nav-list a {
-  padding: .7em .5em;
+  padding: .75em .5em;
   color: #fff;
 }
 nav[role=navigation]  .nav-list a:hover {
@@ -88,7 +94,7 @@ nav[role=navigation]  .nav-list a:hover {
 #home {
   background: #55aabb url(../img/l/argyle-blue.png) 0 0 repeat;
   color: #fff;
-  padding-top: 1em;
+  padding-top: 1.5em;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .7);
   position: relative;
   z-index: 1;
@@ -103,14 +109,14 @@ nav[role=navigation]  .nav-list a:hover {
 #home .show-nav {
   display: block;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   text-indent: -999em;
   overflow: hidden;
   position: absolute;
   z-index: 100;
   right: 5%;
-  bottom: -30px;
+  bottom: -36px;
   background: #000;
   border-radius: 0 0 6px 6px;
   text-align: center;
@@ -122,7 +128,7 @@ nav[role=navigation]  .nav-list a:hover {
   display: block;
   width: 0;
   height: 0;
-  margin: 15px auto 0;
+  margin: 18px auto 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #fff;
@@ -136,6 +142,8 @@ header[role="banner"] {
   text-align: left;
 }
 .logo {
+  margin-top: .75em;
+  margin-bottom: .75em;
   font-weight: 900;
   font-size: 32px;
   font-size: 3.2rem;
@@ -145,10 +153,13 @@ header[role="banner"] {
   display: block;
 }
 .statement {
+  margin-top: .57142855em;
+  margin-bottom: 1.14285714em;
   font-family: 'museo-slab', serif;
   font-weight: 500;
   font-size: 21px;
   font-size: 2.1rem;
+  line-height: 1.71428555;
   text-align: justify;
 }
 .statement a {
@@ -160,30 +171,32 @@ header[role="banner"] {
   width: 100%;
 }
 .photo-list li {
-  margin-bottom: 5em;
+  margin-bottom: 4.5em;
   &:last-child {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
 }
 .client {
   display: block;
   float: left;
   padding-left: 5%;
-  margin-bottom: 1em;
   margin-right: 0;
   text-align: center;
   font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: .75em;
 }
 .caption {
   float: right;
   padding-right: 5%;
   font-size: 14px;
   font-size: 1.4rem;
+  line-height: 1.71428571;
   font-weight: 300;
   font-style: italic;
   color: #888;
-  line-height: 1.5;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: .75em;
 }
 .caption strong {
   display: none;
@@ -191,7 +204,7 @@ header[role="banner"] {
 .photo-list .img {
   display: block;
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .photo-list img {
   display: block;
@@ -205,13 +218,14 @@ header[role="banner"] {
   z-index: 100;
 }
 .experience li {
-  margin-bottom: 3em;
+  margin-bottom: 4.5em;
 }
-.experience h3,
 .experience h4 {
-  margin-bottom: .5em;
+  margin-bottom: 0;
 }
 .experience .dates {
+  margin-top: .75em;
+  margin-bottom: 2.25em;
   font-weight: 300;
   font-style: italic;
 }
@@ -237,7 +251,7 @@ input, textarea {
   box-sizing: border-box;
   border: none;
   width: 100%;
-  padding: .5em;
+  padding: .75em;
   font-size: 16px;
   font-size: 1.6rem;
   background: #FFE7B1;
@@ -256,8 +270,10 @@ textarea {
   resize: vertical;
 }
 input[type=submit] {
+  padding: .57142855em;
   font-size: 21px;
   font-size: 2.1rem;
+  line-height: 1.14285714;
   font-weight: 700;
   border: none;
   background: #5ab;
@@ -279,15 +295,19 @@ input[type=submit]:hover {
   text-align: center;
 }
 .statusMessage p {
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 24px;
   font-size: 2.4rem;
+  line-height: 1;
 }
 .contact-info a {
   display: block;
   text-align: center;
+  margin: 0;
   font-size: 21px;
   font-size: 2.1rem;
-  line-height: 1.5;
+  line-height: 1.14285714;
   color: #000;
 }
 .follow li {
@@ -309,7 +329,8 @@ input[type=submit]:hover {
 
 /*- footer -*/
 #footer {
-  padding-top: 1em;
+  padding-top: .75em;
+  padding-bottom: 2.25em;
   background: #000;
   color: #fafafa;
   text-align: center;
@@ -317,15 +338,15 @@ input[type=submit]:hover {
 .footer-nav .nav-list {
   display: inline-block;
   padding: 0;
-  margin-bottom: 1em;
   font-size: 16px;
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 .footer-nav .nav-list li {
   display: inline-block;
 }
 .footer-nav .nav-list a {
-  padding: .2em;
+  padding: .75em .2em;
   font-weight: 900;
 }
 .footer-nav .nav-list a:hover {
@@ -393,7 +414,7 @@ nav[role=navigation] .show-nav {
     float: none;
     top: 0;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     border: none;
   }
   nav[role=navigation] .nav-list {
@@ -415,40 +436,50 @@ nav[role=navigation] .show-nav {
   nav[role=navigation] .nav-list li:last-child a:hover {
     border-radius: 0 0 6px 6px;
   }
-  .logo span {
-    display: inline;
-  }
+
   header[role=banner] {
     float: left;
-    padding-top: 5em;
+    padding-top: 3em;
     width: 70%;
   }
   .statement {
+    margin-top: .5em;
+    margin-bottom: 1em;
     font-size: 24px;
     font-size: 2.4rem;
+    line-height: 1.5;
   }
   .footer-nav .nav-list a {
-    padding: .3em 1em;
+    padding: .75em 1em;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .nav-list {
+    margin-top: 1.14285714em;
+    margin-bottom: 1.14285714em;
     font-size: 21px;
     font-size: 2.1rem;
+    line-height: 1.14285714;
   }
   #work .content {
     width: 90%;
   }
   .client {
+    margin-top: 1.14285714em;
+    margin-bottom: 1.14285714em;
     padding-left: 0;
     font-size: 21px;
     font-size: 2.1rem;
+    line-height: 1.14285714;
   }
   .caption {
+    margin-top: 1.33333em;
+    margin-bottom: 1.33333em;
     padding-right: 0;
     font-size: 18px;
     font-size: 1.8rem;
+    line-height: 1.33333;
   }
   .photo-list img {
     border: none;
@@ -477,11 +508,18 @@ nav[role=navigation] .show-nav {
   label, input, textarea {
     font-size: 18px;
     font-size: 1.8rem;
+    line-height: 1.33333;
+  }
+  input, textarea {
+    padding: .66667em;
+  }
+  input[type=submit] {
+    padding: .57142855em;
   }
   .follow {
     width: 30%;
     padding-left: 10%;
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
   .follow .line {
     position: relative;
@@ -493,7 +531,7 @@ nav[role=navigation] .show-nav {
   .contact-info a {
     text-align: left;
     padding-left: 40px;
-    min-height: 32px;
+    min-height: 34px;
   }
   .contact-info .phone,
   .contact-info .phone:hover {
@@ -510,6 +548,14 @@ nav[role=navigation] .show-nav {
   .colophon {
     font-size: 21px;
     font-size: 2.1rem;
+    line-height: 1.14285714;
+  }
+  .footer-nav .nav-list a {
+    padding: .57142855em;
+  }
+  .colophon {
+    margin-top: 1.14285714em;
+    margin-bottom: 1.14285714em;
   }
 }
 
@@ -519,21 +565,24 @@ nav[role=navigation] .show-nav {
     width: 80%;
   }
   .page {
-    padding-top: 4em;
+    padding-top: 4.5em;
   }
   nav[role=navigation] {
     width: 20%;
   }
   .logo {
+    margin-top: .66667em;
+    margin-bottom: .66667em;
     font-size: 36px;
-    font-size: 3.8rem;
+    font-size: 3.6rem;
+    line-height: 1.66667;
   }
   .statement {
+    margin-top: .85714286em;
+    margin-bottom: .85714286em;
     font-size: 28px;
     font-size: 2.8rem;
-  }
-  .section-heading h1 {
-    margin-bottom: 2em;
+    line-height: 1.7142856;
   }
   .photo-list li {
     float: left;
@@ -551,13 +600,17 @@ nav[role=navigation] .show-nav {
   label, input {
     font-size: 21px;
     font-size: 2.1rem;
+    line-height: 1.14285714;
+  }
+  input {
+    padding: .57142855em;
   }
   input[type=submit] {
     float: right;
     width: 50%;
   }
   .follow {
-    margin-top: 2em;
+    margin-top: 3em;
   }
   .follow li {
     width: 25%;
