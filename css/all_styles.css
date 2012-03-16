@@ -243,7 +243,7 @@ input[type=submit]{padding:.57142855em;}
 @media only screen and (min-width:1200px){.content,
 #work .content{width:80%;}
 nav[role=navigation]{width:20%;}
-.logo{margin-top:.66667em;margin-bottom:.66667em;font-size:36px;font-size:3.6rem;line-height:1.66667;}
+.logo{margin-top:1em;margin-bottom:1em;font-size:48px;font-size:4.8rem;line-height:1.5;}
 .statement{margin-top:.85714286em;margin-bottom:2.5714284em;font-size:28px;font-size:2.8rem;line-height:1.7142856;}
 .photo-list li{float:left;width:48%;}
 .photo-list li:nth-child(odd){padding-right:2%;}
