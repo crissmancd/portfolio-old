@@ -79,8 +79,6 @@ nav[role=navigation]  .nav-list a:hover {
   margin-right: 5%;
   position: relative;
   top: 0;
-  border: 1px solid #fff;
-  border-top: none;
   border-radius: 0 0 6px 6px;
   -webkit-background-clip: padding-box;
 }
@@ -153,8 +151,8 @@ header[role="banner"] {
   display: block;
 }
 .statement {
-  margin-top: .57142855em;
-  margin-bottom: 1.14285714em;
+  margin-top: .85714275em;
+  margin-bottom: 2.5714284em;
   font-family: 'museo-slab', rockwell,'rockwell std', Serifa, 'Serifa Std', Glypha, 'Glypha Std', Memphis, 'Memphis Std', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
   font-size: 21px;
@@ -240,10 +238,6 @@ header[role="banner"] {
 }
 form {
   margin-bottom: 3em;
-}
-label {
-  line-height: 1.5;
-  display: inline-block;
 }
 input, textarea {
   -moz-box-sizing: border-box;
@@ -415,7 +409,6 @@ nav[role=navigation] .show-nav {
     top: 0;
     width: 100%;
     margin-bottom: 1.5em;
-    border: none;
   }
   nav[role=navigation] .nav-list {
     background: #000;
@@ -443,8 +436,8 @@ nav[role=navigation] .show-nav {
     width: 70%;
   }
   .statement {
-    margin-top: .5em;
-    margin-bottom: 1em;
+    margin-top: .75em;
+    margin-bottom: 2.25em;
     font-size: 24px;
     font-size: 2.4rem;
     line-height: 1.5;
@@ -510,6 +503,9 @@ nav[role=navigation] .show-nav {
     font-size: 1.8rem;
     line-height: 1.33333;
   }
+  label {
+    margin: .66667em 0;
+  }
   input, textarea {
     padding: .66667em;
   }
@@ -564,9 +560,6 @@ nav[role=navigation] .show-nav {
   #work .content {
     width: 80%;
   }
-  .page {
-    padding-top: 4.5em;
-  }
   nav[role=navigation] {
     width: 20%;
   }
@@ -579,7 +572,7 @@ nav[role=navigation] .show-nav {
   }
   .statement {
     margin-top: .85714286em;
-    margin-bottom: .85714286em;
+    margin-bottom: 2.5714284em;
     font-size: 28px;
     font-size: 2.8rem;
     line-height: 1.7142856;
@@ -601,6 +594,9 @@ nav[role=navigation] .show-nav {
     font-size: 21px;
     font-size: 2.1rem;
     line-height: 1.14285714;
+  }
+  label {
+    margin: .57142855em 0;
   }
   input {
     padding: .57142855em;
