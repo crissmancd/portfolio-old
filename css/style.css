@@ -531,11 +531,15 @@ nav[role=navigation] .show-nav {
   }
   .contact-info .phone,
   .contact-info .phone:hover {
-    background: url(../img/h/phone.png) left center no-repeat;
+    background: url(../img/h/phone.png) left top no-repeat;
   }
   .contact-info .email,
   .contact-info .email:hover {
-    background: url(../img/h/message.png) left center no-repeat;
+    background: url(../img/h/message.png) left top no-repeat;
+  }
+  .contact-info .github,
+  .contact-info .github:hover {
+    background:url(../img/h/github.png) left top no-repeat;
   }
   #footer {
     text-align: left;

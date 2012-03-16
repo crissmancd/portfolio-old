@@ -11,6 +11,7 @@ $(document).ready(function(){
 
   $('.show-nav').click(function() {
     $(this).parent().toggleClass('show');
+    return false;
   })
 
   $.localScroll();
