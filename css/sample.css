@@ -1,5 +1,5 @@
 body {
-  padding: 0 0 2em;
+  padding: 0 0 3em;
 }
 img {
   max-width: none;
@@ -9,30 +9,31 @@ img {
   margin: 0 auto;
 }
 nav[role=navigation] {
-  margin-top: .4em;
   margin-bottom: 0;
   font-family: 'museo-slab', serif;
   font-weight: 500;
 }
 .nav-list {
-  margin-bottom: .5em;
+  margin-top: .75em;
+  margin-bottom: .75em;
   text-align: center;
 }
 nav[role=navigation] li {
   display: inline;
-}
-nav[role=navigation] a {
-  padding: .7em .5em;
-  color: #000;
+  margin-top: 1.14285714;
+  margin-bottom: 1.14285714;
   font-size: 21px;
   font-size: 2.1rem;
+  line-height: 1.14285714;
+}
+nav[role=navigation] a {
+  color: #000;
 }
 nav[role=navigation] a:hover {
   background: #FFD371;
   color: #000;
 }
 .logo {
-  line-height: 1.5;
   text-align: center;
 }
 .logo a {
@@ -50,18 +51,21 @@ nav[role=navigation] a:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 4px 8px rgba(0, 0, 0, .3);
 }
 .pagination {
+  margin-top: 1.14285714em;
+  margin-bottom: 1.14285714em;
   font-size: 21px;
   font-size: 2.1rem;
+  line-height: 1.14285714;
   text-align: center;
 }
 .pagination a {
-  padding: .5em 1em;
+  padding: .57142855em 1em;
 }
 
 @media only screen and (min-width: 600px) {
 
  body {
-   padding-top: 1em;
+   padding-top: 1.5em;
  }
  nav[role=navigation] {
   float: right;
