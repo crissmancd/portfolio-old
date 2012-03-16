@@ -35,7 +35,7 @@
 
 /*- general styles -*/
 nav {
-  font-family: 'museo-slab', serif;
+  font-family: 'museo-slab', rockwell,'rockwell std', Serifa, 'Serifa Std', Glypha, 'Glypha Std', Memphis, 'Memphis Std', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
 }
 
@@ -155,7 +155,7 @@ header[role="banner"] {
 .statement {
   margin-top: .57142855em;
   margin-bottom: 1.14285714em;
-  font-family: 'museo-slab', serif;
+  font-family: 'museo-slab', rockwell,'rockwell std', Serifa, 'Serifa Std', Glypha, 'Glypha Std', Memphis, 'Memphis Std', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
   font-size: 21px;
   font-size: 2.1rem;

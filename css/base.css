@@ -38,7 +38,7 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
-  font-family: 'museo-sans', sans-serif;
+  font-family: 'museo-sans', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
   color: #222;
   color: rgba(0, 0, 0, .8);
@@ -49,10 +49,20 @@ img {
   border: 0;
 }
 
+/*- FONT EVENTS ---------------------*/
+.wf-loading header[role=banner],
+.wf-loading li {
+  visibility: hidden;
+}
+.wf-active header[role=banner],
+.wf-active li {
+  visibility: visible;
+}
+
 /* HEADINGS -------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'museo-slab', serif;
+  font-family: 'museo-slab', rockwell,'rockwell std', Serifa, 'Serifa Std', Glypha, 'Glypha Std', Memphis, 'Memphis Std', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
 }
 h1, .h1 {
@@ -153,7 +163,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Monaco", Courier New, monospace;
+  font-family: "Monaco", "Courier New", monospace;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.71428571;
@@ -302,7 +312,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'museo-sans', sans-serif;
+  font-family: 'museo-sans', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   font-size: 1.6rem;
@@ -389,7 +399,7 @@ input:-moz-placeholder {
   clip: auto;
 }
 .amp {
-  font-family: 'museo-sans', sans-serif;
+  font-family: 'museo-sans', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 300;
   font-style: italic;
 }
