@@ -49,15 +49,6 @@ img {
   border: 0;
 }
 
-/*- FONT EVENTS ---------------------*/
-.wf-loading header[role=banner],
-.wf-loading li {
-  visibility: hidden;
-}
-.wf-active header[role=banner],
-.wf-active li {
-  visibility: visible;
-}
 
 /* HEADINGS -------------------------*/
 h1, h2, h3, h4, h5, h6,
