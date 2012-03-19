@@ -5,7 +5,7 @@ $(document).ready(function(){
     return false;
   })
 
-  $.localScroll();
+  $.localScroll({hash:'true'});
 
   $('form').submit(submitForm);
 
